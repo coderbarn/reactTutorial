@@ -25,7 +25,7 @@ function Garage(props){
       
       <h2>Who lives in my garage?</h2>
         <ul>
-          {cars.map((car) => <CarFunc brand={car} style="color:Tomato"/>)}
+          {cars.map((car) => <CarFunc brand={car} style="color:Tomato;"/>)}
         </ul>
     </>
   );

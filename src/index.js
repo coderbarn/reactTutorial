@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {App, MyForm} from './App';
 import {Car, CarFunc, Garage} from './Car';
 import {Football, Basketball} from './MyButton';
 import {Goal, MadeGoal, MissedGoal} from './Goal';
@@ -24,6 +24,7 @@ root.render(
     <br/>
     Event type example:<br/>
     <Basketball />
+    <MyForm />
   </React.StrictMode>
 );
 
