@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {Car, CarFunc} from './Car';
-import Football from './MyButton';
+import {Football, Basketball} from './MyButton';
 
 //import CarFunc from './Car';
 //import reportWebVitals from './reportWebVitals';
@@ -15,6 +15,10 @@ root.render(
     <Car />
     <CarFunc color="red" />
     <Football />
+    <br/>
+    <br/>
+    Event type example:<br/>
+    <Basketball />
   </React.StrictMode>
 );
 

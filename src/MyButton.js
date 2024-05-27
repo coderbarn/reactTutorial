@@ -1,4 +1,4 @@
-function Football() {
+export default function Football() {
   const shoot = (a) => {
     alert(a);
   }
@@ -8,4 +8,15 @@ function Football() {
   );
 }
 
-export default Football;
+function Basketball() {
+  const shoot = (a, b) => {
+    var mystr = a + " --- Event type:" + b.type;
+    alert(mystr);
+  }
+
+  return (
+    <button onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
+  );
+}
+
+export {Football,Basketball};
