@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import {Car, CarFunc, Garage} from './Car';
 import {Football, Basketball} from './MyButton';
+import {Goal, MadeGoal, MissedGoal} from './Goal';
 
 //import CarFunc from './Car';
 //import reportWebVitals from './reportWebVitals';
@@ -16,9 +17,10 @@ root.render(
     <App />
     <Car />
     <CarFunc color="red" />
-    <Garage cars={cars] />
+    <Garage cars={cars} />
     <Football />
     <br/>
+    <Goal isGoal={true}/>
     <br/>
     Event type example:<br/>
     <Basketball />

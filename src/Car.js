@@ -8,7 +8,7 @@ class Car extends React.Component {
 
 // Use of props, come from html attributes
 function CarFunc(props) {
-  return <h2>Hi, I am a {props.color} Car component as a function!</h2>;
+  return <h2>Hi, I am a {props.color} Car component as a function! I am a {props.brand}.</h2>;
 }
 
 function Garage(props){
@@ -19,8 +19,14 @@ function Garage(props){
       {cars.length > 0 &&
         <h2>
           You have {cars.length} cars in your garage.
-          </h2>
+        </h2>
+        
       }
+      
+      <h2>Who lives in my garage?</h2>
+        <ul>
+          {cars.map((car) => <CarFunc brand={car} style="color:Tomato"/>)}
+        </ul>
     </>
   );
 }
