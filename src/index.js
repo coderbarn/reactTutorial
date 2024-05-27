@@ -2,18 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {Car, CarFunc} from './Car';
+import {Car, CarFunc, Garage} from './Car';
 import {Football, Basketball} from './MyButton';
 
 //import CarFunc from './Car';
 //import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const cars = ['Chevy','Mazda', 'BMW', 'Toyota'];
+
 root.render(
   <React.StrictMode>
     <App />
     <Car />
     <CarFunc color="red" />
+    <Garage cars={cars] />
     <Football />
     <br/>
     <br/>
